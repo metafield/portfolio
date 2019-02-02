@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#sky {
+  position: absolute;
+  z-index: -1;
+  background: -webkit-linear-gradient(#00111e 30%, #033d5e);
+  background: -moz-linear-gradient(#00111e 30%, #033d5e);
+  background: -o-linear-gradient(#00111e 30%, #033d5e);
+  background: linear-gradient(#00111e 30%, #033d5e);
+  overflow: hidden;
+}
+
+.moon {
+  height: 150px;
+  width: 150px;
+  animation: moon-spin infinite 20s linear;
+}
+
+@keyframes moon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
