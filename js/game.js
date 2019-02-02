@@ -13,6 +13,7 @@ function startGame() {
   // MUSIC
   const music = new Audio();
   music.src = "/audio/racing-car.mp3";
+  music.volume = 0.2;
   music.play();
   music.loop = true;
   music.controls = true;
